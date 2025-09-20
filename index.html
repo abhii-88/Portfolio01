@@ -1,68 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <title>Abhii's Portfolio</title>
-        <style>
-            body{
-                background-color: lightyellow;
-                font-family: Arial, sans-serif;
-                text-align: center;
-            }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive ke liye -->
+    <title>Abhii's Portfolio</title>
+    <style>
+        body {
+            background-color: #fffbea;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-            /*Profile photo circle*/
-            .profile-pic{
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 3px solid #333;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            }
+        /* Profile photo circle */
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
 
-            /*Skills ko gride me show ke liye*/
+        h1 {
+            margin: 15px 0 5px;
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin: 8px 15px;
+            line-height: 1.5;
+        }
+
+        /* Skills section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .skills div {
+            background: #fff8dc;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        /* Contact section */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive text */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
             .skills {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
-                max-width: 300px;
-                margin: 20px auto;
+                grid-template-columns: 1fr 1fr;
             }
-            .skills div{
-                background: #fff8dc;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-            }
-        </style>
+        }
+    </style>
 </head>
 <body>
 
-    <!--Heading-->
-    <h1 style="font-family: cambria;">Abhii Kumar</h1>
+    <!-- Heading -->
+    <h1>Abhii Kumar</h1>
 
-    <!--Profile Photo-->
-    <img src="\projects\sample01\image\myPhoto.jpg" alt="My Photo" class="profile-pic">
+    <!-- Profile Photo -->
+    <img src="/image/IMG_20250625_191755_187.webp" alt="My Photo" class="profile-pic">
 
-    <!--Paragraph-->
-    <p style="font-family: cambria;"><strong>Student</strong> at KK College of Engineering & Management.</p>
-    <p style="font-family: cambria;">I am learning <em>C Language</em>, <em>Python</em> and building my own AI project <b>IRIS</b>.</p>
+    <!-- Intro -->
+    <p><strong>Student</strong> at KK College of Engineering & Management.</p>
+    <p>I am learning <em>C Language</em>, <em>Python</em> and building my own AI project <b>IRIS</b>.</p>
 
-    <!--Heading-->
-    <h2 style="font-family: cambria;">My Skills</h2>
-    <p style="font-family: cambria;">Some of my skills are:</p>
-
-    <!--Gride list-->
+    <!-- Skills -->
+    <h2>My Skills</h2>
+    <p>Some of my skills are:</p>
     <div class="skills">
-        <div style="font-family: cambria;">HTML </div>
-        <div style="font-family: cambria;">C language </div>
-        <div style="font-family: cambria;">Python </div>
-        <div style="font-family: cambria;">Problem Solving</div>
+        <div>HTML</div>
+        <div>C Language</div>
+        <div>Python</div>
+        <div>Problem Solving</div>
     </div>
 
-    <!--Link-->
-    <h2 style="font-family: cambria;">Contact</h2>
-    <p style="font-family: cambria;">Email me at: <a href="abhi73264l@gmail.com">abhi73264l@gmail.com</a></p>
-    <p style="font-family: cambria;"><sup>16th September, 2025..</sup></p>
+    <!-- Contact -->
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:abhi73264l@gmail.com">abhi73264l@gmail.com</a></p>
 
-</body>    
+</body>
 </html>
